@@ -1,0 +1,86 @@
+.job-detail-content{
+	.dz-title{
+		.job-duration{
+			color: #2db346;
+			font-size: 14px;
+			margin-left: 5px;
+			font-weight: 400;
+		}
+	}
+	.job-address{
+		margin-bottom: 8px;
+		i{
+			margin-right: 8px;
+		}
+	}
+	.income{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.jobs-amount{
+			font-weight: 500;
+			font-size: 14px;
+			color:var(--body-color);
+			display: inline-block;
+			span{
+				color: #046c38;
+			}
+		}
+		.apllication-area{
+			span{
+				color: #ff0000;
+			}
+		}
+	}	
+}
+.widget_categories{
+	&.style-2{
+		ul{
+			li{
+				text-align:unset;
+				padding-left:0 !important;
+				margin-bottom:5px;
+				.info-inner{
+					position: relative;
+					padding-left: 55px;
+					
+					i{	
+						position: absolute;
+						left: 0px;
+						top: 0;
+						font-size: 18px;
+						color: var(--primary);
+						width: 45px;
+						height: 45px;
+						text-align: center;
+						line-height: 45px;
+						border: crimson;
+						border-radius: 25px;
+						background: var(--rgba-primary-1);
+					}
+					.title{
+						font-size: 14px;
+						color: var(--primary);
+						text-transform: uppercase;
+						font-weight: 600;
+						margin-bottom: 4px;
+						display: block;
+						margin-top: 2px;
+					}
+					.info-discription{
+						font-size: 15px;
+						color: #17171d;
+					}
+				}
+			
+			}
+		}
+	}
+}
+
+.job-detail-content{
+	margin-bottom: 30px;
+}
+.blog-single.sidebar.dz-card {
+	margin-bottom:20px;
+}

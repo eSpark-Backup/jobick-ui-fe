@@ -1,0 +1,128 @@
+// dz-bnr-inr
+.dz-bnr-inr{
+    height: auto;
+    background-size: cover;
+	background-position: center;
+	position: relative !important;
+	z-index:2;
+	
+	@include respond('tab-port'){
+		height: 250px;
+	}
+	@include respond('phone-land'){
+		height: 230px;
+	}
+	@include respond('phone'){
+		height: 200px;
+	}
+	
+	.container{
+		display: table;
+		height: 100%;
+		
+	}
+	.dz-bnr-inr-entry{
+	    height: 300px;
+		vertical-align: middle;
+		display: table-cell;
+		
+		@include respond('tab-port'){
+			height: 250px;
+		}
+		@include respond('phone-land'){
+			height: 230px;
+		}
+		@include respond('phone'){
+			height: 200px;
+		}
+	}
+	h1 {
+		font-size: 4.0625rem;
+		margin-bottom: 0px;
+		line-height: 1.2;
+		text-transform: capitalize;
+		color:#fff;
+		
+		@media only screen and (max-width: 1191px){
+			font-size: 48px;
+		}
+		@include respond('tab-port'){
+			font-size: 36px;
+		}
+		@include respond('phone-land'){
+			font-size: 30px;
+		}
+		@include respond('phone'){
+			font-size: 26px;
+		}
+	}
+	.breadcrumb{
+		background: rgba(255, 255, 255, 0.1) !important;
+
+	}
+	.breadcrumb-row{
+		ul{
+			margin-bottom: 0;
+			box-shadow: 0px 4px 100px rgba(21, 50, 93, 0.2);
+			li{
+				&:active{
+					color:#fff !important;
+				}
+			}
+		}
+	}
+	
+}
+.breadcrumb-row{
+	ul {
+		background:var(--card-bg);
+		padding: 0;
+		display:inline-block;
+		padding: 10px 22px;
+		border-radius:var(--border-radius-base);
+		@include respond('phone'){
+			padding: 10px 18px;
+		}
+		
+		li {
+			padding: 0;
+			display: inline-block;
+			font-size: 15px;
+			font-weight: 500;
+			text-transform: capitalize;
+			color: var(--title);
+			&.active{
+				color: #fff;			
+			}
+			a{
+				color:#fff;	
+			}
+			i{
+				color:#fff;
+				margin-right: 10px;
+			}
+			@include respond('phone'){
+				font-size: 14px;
+			}
+		}
+		.breadcrumb-item + .breadcrumb-item{
+			padding-left: 0.8rem;
+			&::before{
+				content: "\f101";
+				font-family: 'Font Awesome 5 Free';
+				font-weight: 900;
+				color:#fff;
+				padding-right: .8rem;
+				
+			}
+			@include respond('phone'){
+				padding-left: 8px;
+				&::before{
+					font-size: 12px;
+					padding-right: 8px;
+					margin-top: 2px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,142 @@
+.site-footer{
+	&.style-1{
+		.footer-top{
+		    background-color: var(--primary);
+			background-blend-mode: luminosity;
+			background-size:cover		;
+			background-position: bottom;
+			.widget{
+				p{
+				font-weight: 400;
+				font-size: 15px;
+				color:#6C96BB;
+					@include respond('phone-land'){
+						width:100%;
+					}
+				}
+				.footer-title{
+				
+				}
+				ul{
+					li{
+					font-weight: 400;
+					font-size: 16px;
+					color:var(--primary);
+						a{
+							font-weight: 400;
+							font-size: 15px;
+							color:#6C96BB;
+							position: relative;
+							z-index:1;
+							transition:0.5s;
+							&:after{
+								content: '';
+								position: absolute;
+								top: 50%;
+								left: -25px;
+								width: 0;
+								height:1px;
+								background: var(--primary);
+								transition:0.5s;
+							}
+							&:hover{
+								margin-left:25px;
+								color:var(--primary);
+								&:after{
+									width: 20px;
+								}
+							
+							}
+						}
+					}
+				}
+			}
+			.widget_getintuch{
+				margin-right:0;
+				ul{
+					margin-bottom:10px;
+					li{
+				    padding-left: 0px;
+					display:flex;
+					align-items: center;
+					margin-top:30px;
+							@include respond('tab-port'){
+								margin-top:0;
+								justify-content: center;
+							}
+						i{
+						margin-right: 12px;
+						font-size: 22px;
+						width: 30px;
+						height: 30px;
+						line-height: 30px;
+						min-width: 30px;
+						}
+					}
+				}
+			}
+			
+			.footer-subscribe-wrapper{
+				position: relative;
+				z-index: 1;
+					&:after{
+						content: '';
+						position: absolute;
+						bottom: 25%;
+						left: 0;
+						border: 1px solid rgba(255, 255, 255, 0.1);
+						width: 100%;
+						z-index: -1;
+							@include respond('tab-port'){
+								display:none;
+							}
+					}	
+				.widget{
+					padding-bottom:30px;
+						@include respond('tab-port'){
+							padding-bottom:0;
+						}
+				}	
+			}
+			
+			.dzSubscribe{
+				.input-group{
+					.btn{
+					border: none;
+					color: #fff;
+					position: absolute;
+					top: 6px;
+					right: 7px;
+					box-shadow: 0px 4px 40px rgba(72, 133, 237, 0.25);
+					border-radius: 6px !important;
+					z-index:99;
+					}
+					input{
+						border:2px solid var(--primary);
+					}
+				}
+			}
+			&.sapping{
+				padding-top:200px;
+					@include respond('tab-port'){
+						padding-top:130px;
+					}
+					@include respond('phone-land'){
+						padding-top:100px;
+					}
+					@include respond('phone'){
+						padding-top:50px;
+					}
+			}
+				
+		}
+		.footer-bottom{
+				border-top:1px solid var(--rgba-primary-3);
+			.copyright-text{
+				font-weight: 400;
+				font-size: 14px;
+				color:#7F9FBC;
+			}
+		}
+	}
+}
